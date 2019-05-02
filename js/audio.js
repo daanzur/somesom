@@ -1,0 +1,1 @@
+function playAudio(n){var a=new Audio,e="audio/",i=".mp3",d=0;a.src=e+n[0]+i,a.play(),a.addEventListener("ended",function(){if(d==n.length-1)return;d++;a.src=e+n[d]+i,a.play()})}function playTrack(){}

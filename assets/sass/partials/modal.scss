@@ -1,0 +1,58 @@
+#modal {
+    transition: visibility 0s linear 0.33s, opacity 0.33s linear;
+    visibility: hidden;
+    opacity: 0;
+    //top: -100%;
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    bottom: 25%;
+    left: 15%;
+    color: $color-secondary;
+    background: $color-primary;
+    border-radius: 3%;
+    display: grid;
+    align-items: center;
+    box-shadow: 1px 3px 5px rgb(201, 201, 201);
+    
+    > div {
+        font-family: 'ranchoregular', sans-serif;
+        h2 {
+            font-size: 8vw;
+            line-height: 1;
+            margin: 0 0 5vw;
+        }
+    }
+    &.show {
+        visibility: visible;
+        opacity: 1;
+        transition-delay: 0s;
+    }
+}
+.stars {
+    svg {
+        fill: #fff;
+        &.active {
+            fill: $color-fourth;
+        }
+    }
+}
+#start {
+    position: absolute;
+    transition: visibility 0s linear 1s, opacity 1s linear;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../images/logo.png) no-repeat center center #fff;
+    #innerStart {
+        z-index: 1;
+    }
+    &.show {
+        visibility: visible;
+        opacity: 1;
+        transition-delay: 0s;
+    }
+}

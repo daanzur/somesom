@@ -1,0 +1,19 @@
+{
+    "name": "somesom",
+    "version": "1.0.0",
+    "description": "Glup setup",
+    "dependencies": {
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "*",
+        "gulp-cli": "2.0.1",
+        "gulp-csso": "*",
+        "gulp-rename": "^1.2.3",
+        "gulp-sass": "*",
+        "gulp-sourcemaps": "*",
+        "gulp-uglify": "*",
+        "gulp-watch": "*"
+    },
+    "devDependencies": {
+        "gulp-uglify-es": "^1.0.4"
+    }
+}
